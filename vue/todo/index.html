@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue ToDo</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="app">
+            <div class="input">
+                <input type="text" v-model="taskInput"><button v-on:click="add">Add</button>
+            </div>
+            <p>There are {{todos.length}} tasks.</p>
+
+            <ol>
+                <li v-for="(item, index) in todos"><span v-if="item.done" style="text-decoration: line-through;">{{item.title}}</span><span v-else>{{item.title}}</span><button v-on:click="remove(index)">X</button><button v-on:click="done(index)">Done</button> (id: {{index + 1}})</li>
+            </ol>
+        </div>
+        <a href="https://github.com/Thundiverter/vuejs">GitHub</a>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

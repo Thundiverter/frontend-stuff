@@ -1,0 +1,19 @@
+body {
+	font-family: Inter;
+}
+
+button {
+	user-select: none;
+	font-family: Inter;
+	margin: 4px;
+}
+
+input {
+	font-family: Inter;
+	width: 256px;
+}
+
+a {
+	position: absolute;
+	bottom: 8px;
+}

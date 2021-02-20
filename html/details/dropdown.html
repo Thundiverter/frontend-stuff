@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>details</title>
+
+        <style>
+            .style {
+                display: inline-block;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: .9rem;
+            }
+            .style summary {
+                padding: 6px 16px;
+                background-color: goldenrod;
+                color: white;
+                border-radius: 6px;
+            }
+            .style summary::-webkit-details-marker {
+                display: none;
+            }
+            .style .dropdown {
+                display: inline-block;
+                position: absolute;
+                border: 1px solid lightgray;
+                border-radius: 6px;
+                margin-top: 4px;
+            }
+            .style .dropdown ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .style .dropdown ul li {
+                padding: 6px 16px;
+            }
+            .style .dropdown ul li:hover {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <details class="style">
+            <summary>Dropdown</summary>
+            <div class="dropdown">
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Dolor</li>
+                    <li>Sit amet</li>
+                </ul>
+            </div>
+        </details>
+
+    </body>
+</html>

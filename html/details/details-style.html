@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>details</title>
+
+        <style>
+            .style details {
+                font-family: Helvetica, Arial, sans-serif;
+                margin-left: 16px;
+                margin-top: 4px;
+            }
+            .style details summary {
+                background-color: #F2F2F2;
+                padding: 2px 8px;
+            }
+            .style > details {
+                margin: 0;
+            }
+            .style p {
+                margin-left: 16px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                padding: 2px 8px;
+            }
+            .style p:hover {
+                background-color: #fcfcfc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="style">
+            <details>
+                <summary>root</summary>
+                <details>
+                    <summary>Documents</summary>
+                    <p>book.pdf</p>
+                    <p>script.js</p>
+                </details>
+                <p>table.xlsx</p>
+            </details>
+        </div>
+    </body>
+</html>
