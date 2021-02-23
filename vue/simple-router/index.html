@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/projects">Projects</router-link></li>
+                    <li><router-link to="/about">About</router-link></li>
+                </ul>
+            </header>
+
+            <router-view></router-view>
+        </div>
+
+        <template id="page-main">
+            <h1>Welcome!</h1>
+            <p>This is the main page</p>
+        </template>
+        <template id="page-projects">
+            <h1>Projects</h1>
+            <p>Soon :D</p>
+        </template>
+        <template id="page-about">
+            <h1>About</h1>
+            <p>I'm Ivan :)</p>
+        </template>
+        <template id="page-404">
+            <h1>404</h1>
+            <p>Page not found :(</p>
+        </template>
+
+
+        <!-- scripts -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
